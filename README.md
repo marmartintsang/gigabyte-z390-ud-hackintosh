@@ -7,6 +7,7 @@
 | Motherboard      | Gigabyte Z390 UD      |   
 | Video Card | ZOTAC GeForce® GTX 1080 Ti AMP Edition      | 
 | Ram | ADATA Premier, 8GB, DDR4, 2666MHz x 2 |
+| Storage | Western Digital 240GB Green M.2 2280 Internal Solid State Drive Model WDS240G1G0B  |
 
 ## PreRequisites
 - [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
