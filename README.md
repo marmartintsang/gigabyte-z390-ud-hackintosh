@@ -7,6 +7,10 @@
 | Motherboard      | Gigabyte Z390 UD      |   
 | Video Card | ZOTAC GeForce® GTX 1080 Ti AMP Edition      | 
 
+## PreRequisites
+- [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+- [Clover's Install Package](http://mackie100projects.altervista.org/download-clover-configurator/)
+
 ## Installation Walkthrough
 1. Get `MacOS High Sierra (< 10.13.6)`. ([Huihut](https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/)) has mentioned that there is a bug when using `10.13.6` image.)
 2. Building the USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer)
