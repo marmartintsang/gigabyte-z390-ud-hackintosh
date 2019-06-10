@@ -8,7 +8,7 @@
 | Video Card | ZOTAC GeForce® GTX 1080 Ti AMP Edition      | 
 
 ## Installation Walkthrough
-1. Get `MacOS High Sierra (< 10.13.6)` from the Mac App Store. ((Huihut)[https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/] has mentioned that there is a bug when using `10.13.6` image.)
+1. Get `MacOS High Sierra (< 10.13.6)` from the Mac App Store. (Huihut)[https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/] has mentioned that there is a bug when using `10.13.6` image.)
 2. Building the USB Installer followed by (Vanilla)[https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer]
 3. Install `Clover EFI bootloader` to USB Installer followed by (Vanilla)[https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/clover-setup]
 4. Copy `VirtualSMC.kext` and `IntelMausiEthernet.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
