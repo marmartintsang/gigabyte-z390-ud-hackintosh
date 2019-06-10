@@ -9,12 +9,16 @@
 | Ram | ADATA Premier, 8GB, DDR4, 2666MHz x 2 |
 | Storage | Western Digital 240GB Green M.2 2280 Internal Solid State Drive Model WDS240G1G0B  |
 
+## Targeted OS
+#### macOS High Sierra
+It is a pity that Nvidia display card is currently not supported in macOS Mojave and above ;( The second thing I would like to mention is that GeForce® RTX 20 series is not supported by Nvidia also. (No drivers for RTX 20 series for macOS). Thus, my build will use GTX 1080 and 10.13 for the best performance.
+
 ## PreRequisites
 - [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - [Clover's Install Package](http://mackie100projects.altervista.org/download-clover-configurator/)
 
 ## Installation Walkthrough
-1. Get `MacOS High Sierra (< 10.13.6)`. ([Huihut](https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/)) has mentioned that there is a bug when using `10.13.6` image.)
+1. Get `macOS High Sierra (< 10.13.6)`. ([Huihut](https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/)) has mentioned that there is a bug when using `10.13.6` image.)
 2. Building the USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer)
 3. Install `Clover EFI bootloader` to USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/clover-setup)
 4. Copy `VirtualSMC.kext` and `IntelMausiEthernet.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
