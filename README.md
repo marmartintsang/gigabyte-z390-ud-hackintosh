@@ -3,7 +3,7 @@
 ## Part List
 | Component     | Model         | 
 | ------------- |:-------------:| 
-| CPU           | Intel® Core™ i7-7700 Processor | 
+| CPU           | Intel® Core™ i7-8700 Processor | 
 | Motherboard      | Gigabyte Z390 UD      |   
 | Video Card | ZOTAC GeForce® GTX 1080 Ti AMP Edition      | 
 
