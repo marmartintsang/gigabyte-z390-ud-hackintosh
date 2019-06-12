@@ -1,4 +1,4 @@
-# Gigabyte Z390-UD Hackintosh Installation
+# [SUCCESS] Gigabyte Z390-UD Hackintosh Installation
 
 ## Part List
 | Component     | Model         | 
@@ -18,15 +18,19 @@ It is a pity that Nvidia display card is currently not supported in macOS Mojave
 - [Clover's Install Package](http://mackie100projects.altervista.org/download-clover-configurator/)
 
 ## Installation Walkthrough
-1. Get `macOS High Sierra (< 10.13.6)`. ([Huihut](https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/)) has mentioned that there is a bug when using `10.13.6` image.)
+1. Get `macOS High Sierra (10.13.6)`
 2. Building the USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer)
 3. Install `Clover EFI bootloader` to USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/clover-setup)
-4. Copy `VirtualSMC.kext` and `IntelMausiEthernet.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
-
+4. Copy `FakeSMC.kext`, `IntelMausiEthernet.kext`, `USBInjectAll.kext`, `FakePCIID.kext + FakePCIID_XHCIMux.kext`, `AppleALC.kext`, `Lilu.kext`, `WhateverGreen.kext` and `AirportBrcmFixup.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
+5. Configure Bios
+5.1. Load Optimized Default Settings
+5.2. Peripherals → USB Configuration → XHCI Hand-off : Enabled
+5.3. Disable V-td
+6. Install macOS
+7. Install nvidia web driver
 
 ## References
 - [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
 - [z390 aorus master i99900k gtx1070ti high sierra](https://www.reddit.com/r/hackintosh/comments/a4obvs/z390_aorus_master_i99900k_gtx1070ti_high_sierra/)
 - [Hackintosh Mojave Installation Guide for Gigabyte Z390 Aorus Master](https://github.com/cmer/gigabyte-z390-aorus-master-hackintosh)
-- [技嘉Z370 HD3P + i7-8700K + GTX1080 装黑苹果 High Sierra 10.13.6](https://blog.huihut.com/2018/10/13/GIGABYTE_Z370_HD3P_i7-8700K_GTX1080_Install_Hackintosh_HighSierra10.13.6/)
 - [Building a GTX 1080 Ti-powered Hackintosh: Installing macOS Sierra step-by-step [Video]](https://9to5mac.com/2017/04/28/building-a-gtx-1080-ti-powered-hackintosh-installing-macos-sierra-step-by-step-video/)
