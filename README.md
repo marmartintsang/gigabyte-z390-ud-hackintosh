@@ -23,14 +23,23 @@ It is a pity that Nvidia display card is currently not supported in macOS Mojave
 1. Get `macOS High Sierra (10.13.6)`
 2. Building the USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer)
 3. Install `Clover EFI bootloader` to USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/clover-setup)
-4. Copy `FakeSMC.kext`, `IntelMausiEthernet.kext`, `USBInjectAll.kext`, `FakePCIID.kext + FakePCIID_XHCIMux.kext`, `AppleALC.kext`, `Lilu.kext`, `WhateverGreen.kext` and `AirportBrcmFixup.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
+4. Copy `FakeSMC.kext (All kexts)`, `IntelMausiEthernet.kext`, `USBInjectAll.kext`, `AppleALC.kext`, `Lilu.kext`, `WhateverGreen.kext` and `AirportBrcmFixup.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
 5. Edit Config.Plist by `Clover Configurator`, the settings can be found here [Coffee Lake Config](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/coffee-lake)
-5. Configure Bios
-5.1. Load Optimized Default Settings
-5.2. Peripherals → USB Configuration → XHCI Hand-off : Enabled
-5.3. Disable V-td
-6. Install macOS
-7. Install nvidia web driver
+6. Configure Bios
+    - Load Optimized Default Settings
+    - Peripherals → USB Configuration → XHCI Hand-off : Enabled
+    - Peripherals → Super IO Configuration → Serial Port: Disabled
+    - Chipset → DVMT Pre-Allocated: 96M
+    - Chipset → DVMT Total Gfx Mem: 256M
+7. Install macOS
+8. Create EFI partition for Hackintosh
+    - locate SSD & USB's disk no. by `diskutil list`
+    - Create EFI partition for Hackintosh `sudo mkdir /Volumes/efidisk`
+    - `sudo mount -t msdos /dev/disk{number} /Volumes/efidisk`
+    - Mount USB's EFI partition `sudo mkdir /Volumes/efiusb`
+    - `sudo mount -t msdos /dev/disk{number} /Volumes/efiusb`
+    - Copy clover settings from USB `cp -R /Volumes/efiusb/* /Volumes/efidisk`
+9. Install nvidia web driver
 
 ## References
 - [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
