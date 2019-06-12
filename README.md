@@ -1,5 +1,7 @@
 # [SUCCESS] Gigabyte Z390-UD Vanilla Hackintosh Installation
 
+![Hackintosh info](https://github.com/marmartintsang/gigabyte-z390-ud-hackintosh/blob/master/img/info.png?raw=true)
+
 ## Part List
 | Component     | Model         | 
 | ------------- |:-------------:| 
@@ -10,6 +12,8 @@
 | Storage | Western Digital 240GB Green M.2 2280 Internal Solid State Drive Model WDS240G1G0B  |
 | Wifi | BCM94360 PCI-E |
 | Bluetooth | BCM94360 USB |
+
+![Part List](https://github.com/marmartintsang/gigabyte-z390-ud-hackintosh/blob/master/img/hardware.jpg?raw=true)
 
 ## Targeted OS
 #### macOS High Sierra
@@ -40,6 +44,10 @@ It is a pity that Nvidia display card is currently not supported in macOS Mojave
     - `sudo mount -t msdos /dev/disk{number} /Volumes/efiusb`
     - Copy clover settings from USB `cp -R /Volumes/efiusb/* /Volumes/efidisk`
 9. Install nvidia web driver
+
+![CPU Score](https://github.com/marmartintsang/gigabyte-z390-ud-hackintosh/blob/master/img/geekbench-cpu-score.png?raw=true)
+
+![GPU Score](https://github.com/marmartintsang/gigabyte-z390-ud-hackintosh/blob/master/img/geekbench-gpu-score.png?raw=true)
 
 ## References
 - [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
