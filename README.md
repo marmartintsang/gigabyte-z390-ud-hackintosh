@@ -22,6 +22,7 @@ It is a pity that Nvidia display card is currently not supported in macOS Mojave
 2. Building the USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/building-the-usb-installer)
 3. Install `Clover EFI bootloader` to USB Installer followed by [Vanilla](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/clover-setup)
 4. Copy `FakeSMC.kext`, `IntelMausiEthernet.kext`, `USBInjectAll.kext`, `FakePCIID.kext + FakePCIID_XHCIMux.kext`, `AppleALC.kext`, `Lilu.kext`, `WhateverGreen.kext` and `AirportBrcmFixup.kext` to `/Volumes/EFI/EFI/CLOVER/kexts/Other`
+5. Edit Config.Plist by `Clover Configurator`, the settings can be found here [Coffee Lake Config](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/coffee-lake)
 5. Configure Bios
 5.1. Load Optimized Default Settings
 5.2. Peripherals → USB Configuration → XHCI Hand-off : Enabled
