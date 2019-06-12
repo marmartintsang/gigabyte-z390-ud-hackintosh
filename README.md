@@ -1,4 +1,4 @@
-# [SUCCESS] Gigabyte Z390-UD Hackintosh Installation
+# [SUCCESS] Gigabyte Z390-UD Vanilla Hackintosh Installation
 
 ## Part List
 | Component     | Model         | 
