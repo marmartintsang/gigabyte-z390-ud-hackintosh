@@ -8,6 +8,8 @@
 | Video Card | ZOTAC GeForce® GTX 1080 Ti AMP Edition      | 
 | Ram | ADATA Premier, 8GB, DDR4, 2666MHz x 2 |
 | Storage | Western Digital 240GB Green M.2 2280 Internal Solid State Drive Model WDS240G1G0B  |
+| Wifi | BCM94360 PCI-E |
+| Bluetooth | BCM94360 USB |
 
 ## Targeted OS
 #### macOS High Sierra
